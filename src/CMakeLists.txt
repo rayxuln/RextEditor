@@ -1,5 +1,7 @@
 find_library(CocoaLib Cocoa)
 
+configure_file(RextEditorWindowStyle.qss RextEditorWindowStyle.qss)
+
 add_library(FileManager "")
 target_sources(FileManager
         PRIVATE

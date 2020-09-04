@@ -26,7 +26,10 @@ RextEditorWindow::RextEditorWindow(FileManager &fileManager, QWidget *parent):fi
 #endif
     statusBar()->hide();
 
-
+    QFile qssFile("RextEditorWindowStyle.qss");
+    qssFile.open(QIODevice::ReadOnly | QIODevice::Text);
+    if(qssFile.isReadable())
+        setStyleSheet(qssFile.readAll());
 }
 
 RextEditorWindow::~RextEditorWindow() noexcept {

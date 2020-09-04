@@ -1,0 +1,13 @@
+QMainWindow
+{
+    background-color: #1E1E1E;
+    color: white;
+}
+QTextEdit
+{
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    selection-color: #1E1E1E;
+    selection-background-color: white;
+}
